@@ -1,0 +1,137 @@
+/*button-start*/
+
+.btn {
+    outline: none;
+    border: none;
+
+    min-width: 175px;
+    max-width: max-content;
+
+    padding: 16px 24px 14px;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    border-radius: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+/*button-end*/
+
+/*primary-button-start*/
+
+.primary-button {
+    border: 1px solid var(--clr-white);
+    color: var(--clr-blue);
+    background-color: var(--clr-white);
+
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    color: var(--clr-white);
+    background-color: transparent;
+}
+
+.primary-button:active {
+    color: var(--clr-blue);
+    background-color: var(--clr-white);
+}
+
+.primary-button:disabled {
+    color: var(--clr-gray);
+    background-color: var(--clr-light-gray);
+
+    cursor: not-allowed;
+}
+
+/*primary-button-end*/
+
+/*secondary-button-start*/
+
+.secondary-button {
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    background-color: var(--clr-blue);
+
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    color: var(--clr-blue);
+    background-color: var(--clr-white);
+}
+
+.secondary-button:active {
+    color: var(--clr-white);
+    background-color: var(--clr-blue);
+}
+
+.secondary-button:disabled {
+    color: var(--clr-gray);
+    border: 1px solid var(--clr-light-gray);
+    background-color: transparent;
+    
+    cursor: not-allowed;
+}
+
+/*secondary-button-end*/
+
+/*tertiary-button-start*/
+
+.tertiary-button {
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.tertiary-button:hover {
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+}
+
+.tertiary-button:active {
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+}
+
+.tertiary-button:disabled {
+    color: var(--clr-gray);
+    border: 1px solid var(--clr-light-gray);
+    background-color: transparent;
+}
+
+/*tertiary-button-end*/
+
+/*white-button-start*/
+
+.white-button {
+    color: var(--clr-black);
+    border: 1px solid var(--clr-white);
+    background-color: var(--clr-white);
+
+    cursor: pointer;
+}
+
+.white-button:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    border: 1px solid var(--clr-black);
+}
+
+.white-button:active {
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+}
+
+.white-button:disabled {
+    color: var(--clr-gray);
+    border: 1px solid var(--clr-light-gray);
+    background-color: transparent;
+}
+
+/*white-button-end*/

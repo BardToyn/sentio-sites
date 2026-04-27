@@ -1,0 +1,33 @@
+@import url(./normalize.css);
+@import url(./fonts.css);
+@import url(./color.css);
+@import url(./components/buttons.css);
+@import url(./components/input.css);
+@import url(./components/header.css);
+@import url(./components/footer.css);
+@import url(./amimation.css);
+
+a {
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+}

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang=ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Sentio - Верстка</title>
+</head>
+<body>
+    <!--Header-start-->
+
+    <div class="top-nav">
+        <div class="container">
+            <div class="top-nav-wrapper">
+                <a href="#" class="top-nav__link link white">
+                    Сведение об образовательной организации
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="header-logo">
+                    <img src="./assets/icons/logo_white.svg" alt="logo" class="header-logo__img">
+                </a>
+                <nav class="header-nav">
+                    <a href="#" class="header-nav__link link">
+                        Главная
+                    </a>
+                    <a href="#" class="header-nav__link link">
+                        Курсы
+                    </a>
+                    <a href="#" class="header-nav__link link">
+                        О компании
+                    </a>
+                    <a href="#" class="header-nav__link link">
+                        Магазин
+                    </a>
+                    <a href="#" class="header-nav__link link">
+                        Медиа
+                    </a>
+                    <a href="#" class="header-nav__link link">
+                        Контакты
+                    </a>
+                </nav>
+                <div class="header-social__list">
+                    <a href="#" class="header-social__link">
+                        <img src="./assets/icons/vk.svg" alt="vk" class="header-social__img">
+                    </a>
+                    <a href="#" class="header-social__link">
+                        <img src="./assets/icons/tg.svg" alt="telegram" class="header-social__img">
+                    </a>
+                    <a href="#" class="header-social__link">
+                        <img src="./assets/icons/email.svg" alt="email" class="header-social__img">
+                    </a>
+                    <a href="#" class="header-social__link">
+                        <img src="./assets/icons/phone.svg" alt="phone" class="header-social__img">
+                    </a>
+                </div>
+                <div class="header-phone">
+                    <a href="tel:+79282791391" class="header-phone__link link">
+                        +7 (928) 279-13-91
+                    </a>
+                </div>
+                <div class="header-burger">
+                    <button class="burger-btn">
+                        <img src="./assets/icons/burger.svg" alt="burger" class="burger-btn__img">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Header-end-->
+
+    <!--body-start-->
+
+    <main class="home">
+
+        <div class="hero">
+            <picture class="hero-picture">
+                <source srcset="./assets/images/hero_small.png" media="(max-width: 768px)">
+                <img src="./assets/images/hero_large.png" alt="hero" class="hero-img">
+            </picture>
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h1 class="hero-title heading-h2 fade-up">
+                            Учебный центр<br>практической психологии
+                        </h1>
+                        <p class="hero-subtitle subtitle fade-up">
+                            Образовательное учреждение дополнительного<br>профессионального образования. Лицензия №6543
+                        </p>
+                        <div class="hero-btn__wrap fade-up">
+                            <button class="hero-btn button btn primary-button">Просмотреть курсы</button>
+                            <button class="hero-btn button btn primary-button">Запись на консультацию</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <article class="about-content">
+                        <h2 class="about-title heading-h4 fade-up">
+                            Обучаем самым актуальным направлениям психологии и поможем найти то, что подойдет именно вам.
+                        </h2>
+                        <a href="#" class="about-link button btn primary-button fade-up">
+                            Подробнее
+                        </a>
+                    </article>
+                    <div class="about-list">
+                        <p class="about-list__item body fade-up">
+                            Имеем Государственную образовательную лицензию №Л035-01276-61/00287061
+                        </p>
+                        <p class="about-list__item body fade-up">
+                            Товарный знак СЕНТИО зарегистрирован в Государственном реестре товарных знаков и знаков обслуживания № 1039958
+                        </p>
+                        <p class="about-list__item body fade-up">
+                            Сведения о дипломах вносятся в Федеральную информационную систему ФРДО
+                        </p>
+                    </div>
+                    <a href="#" class="about-link__double button btn primary-button fade-up">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="course">
+            <div class="container">
+                <div class="course-wrapper">
+                    <h2 class="course-title heading-h3 fade-up black">
+                        Ближайшие курсы
+                    </h2>
+                    <div class="course-block">
+                        <div class="course-category fade-up">
+                            <button class="course-category__btn btn button active">
+                                Все курсы
+                            </button>
+                            <button class="course-category__btn btn button">
+                                Популярные курсы
+                            </button>
+                            <button class="course-category__btn btn button">
+                                Стать психологом
+                            </button>
+                            <button class="course-category__btn btn button">
+                                Рост практики
+                            </button>
+                        </div>
+                        <div class="course-list">
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                            <a href="#" class="course-item fade-up">
+                                <div class="course-item__content">
+                                    <div class="course-item__tab-list">
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Длительность: 3 месяца</span>
+                                        </div>
+                                        <div class="course-item__tab-item">
+                                            <span class="caption">Популярный</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="course-item__title heading-h4">
+                                        Сексология в психологическом консультировании
+                                    </h3>
+                                </div>
+                                <div class="course-item-date">
+                                    <span class="caption-small">21-22 марта</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="/" class="course-link button btn secondary-button fade-up">
+                            Смотреть все курсы
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="docs">
+            <div class="container">
+                <div class="docs-wrapper">
+                    <article class="docs-article">
+                        <h2 class="docs-article__title heading-h3 fade-up">
+                            Выдаем официальные документы
+                        </h2>
+                        <div class="docs-article__content">
+                            <p class="docs-article__subtitle body gray fade-up">
+                                Диплом о профессиональной переподготовке, удостоверение дополнительного образования, сертификат о прохождении программы.
+                            </p>
+                            <p class="docs-article__subtitle body gray fade-up">
+                                Сведения о дипломе вносятся в Федеральную информационную систему ФРДО в течение 30 дней с даты выдачи документа, что гарантирует официальное признание диплома на всей территории РФ.
+                            </p>
+                        </div>
+                        <a href="#" class="docs-article__link btn button secondary-button fade-up">
+                            Подробнее
+                        </a>
+                    </article>
+                    <div class="docs-list">
+                        <picture class="docs-item fade-up">
+                            <img src="./assets/images/docs_one_large.png" alt="docs" class="docs-item__img">
+                        </picture>
+                        <picture class="docs-item fade-up">
+                            <source srcset="./assets/images/docs_two_small.png" media="(max-width: 768px)">
+                            <img src="./assets/images/docs_two_large.png" alt="docs" class="docs-item__img">
+                        </picture>
+                        <picture class="docs-item fade-up">
+                            <source srcset="./assets/images/docs_three_small.png" media="(max-width: 768px)">
+                            <img src="./assets/images/docs_three_large.png" alt="docs" class="docs-item__img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="container">
+                <div class="review-wrapper">
+                    <article class="review-article">
+                        <h2 class="review-article__title heading-h3 black fade-up">
+                            Отзывы довольных клиентов
+                        </h2>
+                        <p class="review-article__subtitle body gray fade-up">
+                            Более 3500 выпускников УЦПП «Сентио» уже получили знания, которые применяют для улучшения качества своей жизни, развития и усовершенствования профессиональных навыков
+                        </p>
+                    </article>
+                    <div class="swiper review-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-item">
+                                    <div class="review-item__content">
+                                        <p class="review-item__text body gray">
+                                            Сентио - это лучший психологический центр 
+                                            нашего города. Туда можно обратиться за 
+                                            профессиональной помощью, записаться на 
+                                            групповую терапию, а еще пройти обучение 
+                                            и получить практические навыки для 
+                                            начинающих и практикубщих психологов.
+                                        </p>
+                                    </div>
+                                    <div class="review-item__header">
+                                        <img src="./assets/images/review_example.png" alt="review" class="review-item__img">
+                                        <div class="review-header__content">
+                                            <h3 class="review-header__title heading-h6 black fade-up">
+                                                Мария Иванова
+                                            </h3>
+                                            <p class="review-header__subtitle body gray fade-up">
+                                                Руководитель компании
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-new cta">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <article class="cta-article">
+                            <h2 class="cta-title heading-h4 black fade-up">
+                                Не можете отпределиться что подходит именно Вам?
+                            </h2>
+                            <p class="cta-subtitle body gray fade-up">
+                                Оставьте заявку подберем программу идвидуально для Вас!
+                            </p>
+                        </article>
+                        <form class="cta__form contact__form" id="telegramForm_cta">
+                            <input class="cta__input" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="cta__input" type="email" name="email" placeholder="Email" required>
+                            <input class="cta__input" type="tel" name="phone" placeholder="+7 (800) 555 35-55" required>
+                            <div class="cta-checkbox__wrapper">
+                                <input class="cta-checkbox" type="checkbox" name="privacy" id="privacy_cta" required>
+                                <label class="cta-checkbox__label" for="privacy_cta">
+                                    Я ознакомлен(а) с Политикой обработки персональных данных и даю согласие на обработку моих персональных данных
+                                </label>
+                            </div>
+                            <button type="submit" class="cta-btn btn button secondary-button">Записаться на консультацию</button>
+                        </form>
+                    </div>
+                    <div class="cta-picture">
+                        <img src="./assets/images/cta_img.png" class="cta-img" alt="Консультация">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--body-end-->
+
+    <!--Footer-start-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-contact">
+                        <img src="./assets/icons/logo_white.svg" alt="logo" class="header-footer__img">
+                        <p class="footer-contact__text body">
+                            Оставьте заявку и мы подберём программу индивидуально для вас!
+                        </p>
+                        <div class="footer-social__list">
+                            <a href="#" class="footer-social__link">
+                                <img src="./assets/icons/vk.svg" alt="vk" class="header-social__img">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="./assets/icons/tg.svg" alt="telegram" class="header-social__img">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="./assets/icons/email.svg" alt="email" class="header-social__img">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="./assets/icons/phone.svg" alt="phone" class="header-social__img">
+                            </a>
+                        </div>
+                        <button class="footer-btn button btn primary-button">
+                            Задать вопрос
+                        </button>
+                    </div>
+                    <nav class="footer-nav">
+                        <h5 class="footer-nav__title heading-h5">
+                            Курсы
+                        </h5>
+                        <div class="footer-nav__list">
+                            <a href="#" class="footer-nav__link link">
+                                Все курсы
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Популярные курсы
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Стать психологом
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Рост практики
+                            </a>
+                        </div>
+                    </nav>
+                    <nav class="footer-nav">
+                        <h5 class="footer-nav__title heading-h5">
+                            О компании
+                        </h5>
+                        <div class="footer-nav__list">
+                            <a href="#" class="footer-nav__link link">
+                                О нас
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Команда
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Награды
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Сведения об образовательной организации
+                            </a>
+                        </div>
+                    </nav>
+                    <nav class="footer-nav">
+                        <h5 class="footer-nav__title heading-h5">
+                            Курсы
+                        </h5>
+                        <div class="footer-nav__list">
+                            <a href="#" class="footer-nav__link link">
+                                Документы
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Политика конфиденциальности
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Положение об обработке персональных данных
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Политика оператора в отношении обработки персональных данных
+                            </a>
+                            <a href="#" class="footer-nav__link link">
+                                Файлы куки
+                            </a>
+                        </div>
+                    </nav>
+                    <nav class="footer-nav">
+                        <h5 class="footer-nav__title heading-h5">
+                            Контакты
+                        </h5>
+                        <div class="footer-nav__list">
+                            <a href="#" class="footer-nav__link link">
+                                г. Ростов-на-Дону, пр-т Королева, 22г,4 этаж, к. 403 ТЦ "Галактика"
+                            </a>
+                            <div class="footer-nav__block">
+                                <span class="footer-nav__link link">График работы:</span>
+                                <span class="footer-nav__link link">Пн-Пт: 11:00-17:00</span>
+                            </div>
+                            <a href="tel:+79282791391" class="footer-nav__link link">
+                                +7 (928) 279-13-91
+                            </a>
+                            <a href="mailto:centr@sentio-ps.ru" class="footer-nav__link link">
+                                centr@sentio-ps.ru
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-partners__list">
+                        <a href="#" class="footer-partners__item">
+                            <img src="./assets/images/partners/minnayk.png" alt="partner" class="footer-partners__img">
+                        </a>
+                        <a href="#" class="footer-partners__item">
+                            <img src="./assets/images/partners/minprom.png" alt="partner" class="footer-partners__img">
+                        </a>
+                    </div>
+                    <div class="footer-help">
+                        <button class="footer-help__btn heading-h6">
+                            Версия для<br>слабовидящих
+                        </button>
+                        <div class="footer-search">
+                            <h6 class="footer-search__title heading-h6">Поиск по сайту</h6>
+                            <div class="footer-search__form">
+                                <input type="text" class="footer-search__input caption" placeholder="Введите текст...">
+                                <button class="footer-search__btn button">
+                                    Найти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer-copyright__text">
+                        &copy; 2026 УЦПП СЕНТИО. Все права защищены.
+                    </p>
+                    <a href="/sitemap.xml" class="footer-link">
+                        Карта сайта
+                    </a>
+                    <a href="tkaachev.ru" class="footer-link">
+                        Поддержка сайта: <span class="footer-link__text">tkaachev.ru</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Footer-end-->
+
+    <script src="./assets/scripts/header.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/review.js" defer></script>
+</body>
+</html>

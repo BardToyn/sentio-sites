@@ -1,0 +1,36 @@
+:root {
+
+    /*brand-colors-start*/
+
+    --clr-white: #FFFFFF;
+    --clr-light-gray: #F5F5F5;
+    --clr-black: #071116;
+    --clr-gray: #646464;
+    --clr-blue: #0563A0;
+    --clr-blue-transparent: #0563a099;
+    --clr-blue-light: #D3ECFF;
+    --clr-blue-light-2: #F1F8FF;
+
+    /*brand-colors-end*/
+
+}
+
+.white {
+    color: var(--clr-white);
+}
+
+.black {
+    color: var(--clr-black);
+}
+
+.gray {
+    color: var(--clr-gray);
+}
+
+.blue {
+    color: var(--clr-blue);
+}
+
+.blue-light {
+    color: var(--clr-blue-light);
+}
