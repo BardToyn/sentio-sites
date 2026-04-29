@@ -493,7 +493,7 @@
                         <form class="cta__form contact__form" id="telegramForm_cta">
                             <input class="cta__input" type="text" name="name" placeholder="Ваше имя" required>
                             <input class="cta__input" type="email" name="email" placeholder="Email" required>
-                            <input class="cta__input" type="tel" name="phone" placeholder="+7 (800) 555 35-55" required>
+                            <input class="cta__input" type="tel" name="phone" placeholder="+7 (800) 555 35-55" inputmode="tel" required>
                             <div class="cta-checkbox__wrapper">
                                 <input class="cta-checkbox" type="checkbox" name="privacy" id="privacy_cta" required>
                                 <label class="cta-checkbox__label" for="privacy_cta">
@@ -505,6 +505,174 @@
                     </div>
                     <div class="cta-picture">
                         <img src="./assets/images/cta_img.png" class="cta-img" alt="Консультация">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="partners-wrapper">
+                    <article class="partners-article">
+                        <h2 class="partners-article__title heading-h3 black fade-up">
+                            Сотрудничество и партнерство
+                        </h2>
+                    </article>
+                    <div class="partners-list">
+                        <div class="partners-item fade-up">
+                            <img src="./assets/images/partners/dstu.png" alt="Дгту" class="partners-item__img">
+                        </div>
+                        <div class="partners-item fade-up">
+                            <img src="./assets/images/partners/agency.png" alt="Агенство развития гражданских инициатив Ростовской области" class="partners-item__img">
+                        </div>
+                        <div class="partners-item fade-up">
+                            <img src="./assets/images/partners/souz.png" alt="Союз охраны психологического здоровья" class="partners-item__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <article class="faq-article">
+                    <h2 class="faq-article__title heading-h3 black fade-up">
+                        Часто задаваемые вопросы
+                    </h2>
+                </article>
+                <div class="faq-list">
+                    <div class="faq-item is-open">
+                        <button class="faq-item__header" type="button" aria-expanded="true">
+                            <h3 class="faq-item__title heading-h6 black fade-up">
+                                Какие документы я получу после окончания обучения?
+                            </h3>
+                            <span class="faq-item__icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p class="faq-item__text body gray">
+                                После прохождения программ СЕНТИО вы получаете документ установленного образца - удостоверение о дополнительном профессиональном образовании (ДПО). После прохождения программы "Психологическое консультирование. Интегративный подход" вы получаете диплом о профессиональной переподготовке (при наличии диплома о высшем образовании). Диплом регистрируется в Федеральном реестре сведений о документах об образовании (ФИС ФРДО) - это можно проверить на сайте Рособрнадзора.
+                            </p>
+                            <p class="faq-item__text body gray">
+                                Если у вас нет диплома о высшем образовании, вы получите сертификат о прослушивании программы "Психологическое консультирование. Интегративный подход".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog-wrapper">
+                    <article class="blog-article">
+                        <h2 class="blog-article__title heading-h3 black fade-up">
+                            Новости
+                        </h2>
+                    </article>
+                    <div class="blog-block">
+                        <div class="blog-category">
+                            <button class="blog-category__btn btn button active">
+                                Все новости
+                            </button>
+                            <button class="blog-category__btn btn button">
+                                Полезное
+                            </button>
+                            <button class="blog-category__btn btn button">
+                                Мероприятия
+                            </button>
+                        </div>
+                        
+                        <div class="blog-swiper-wrap">
+                            <div class="swiper blog-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="blog-item">
+                                            <picture class="blog-item__picture">
+                                                <img src="./assets/images/blog_example.png" alt="blog" class="blog-item__img">
+                                            </picture>
+                                            <article class="blog-item__content">
+                                                <h3 class="blog-item__title heading-h6 black fade-up">
+                                                    Стажировка в Адыгее 2026
+                                                </h3>
+                                                <div class="blog-item__category">
+                                                    <div class="blog-item__category-item">
+                                                        <span class="blog-item__category-item-text caption-small">
+                                                            Мероприятия
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="blog-item">
+                                            <picture class="blog-item__picture">
+                                                <img src="./assets/images/blog_example.png" alt="blog" class="blog-item__img">
+                                            </picture>
+                                            <article class="blog-item__content">
+                                                <h3 class="blog-item__title heading-h6 black fade-up">
+                                                    Стажировка в Адыгее 2026
+                                                </h3>
+                                                <div class="blog-item__category">
+                                                    <div class="blog-item__category-item">
+                                                        <span class="blog-item__category-item-text caption-small">
+                                                            Мероприятия
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="blog-item">
+                                            <picture class="blog-item__picture">
+                                                <img src="./assets/images/blog_example.png" alt="blog" class="blog-item__img">
+                                            </picture>
+                                            <article class="blog-item__content">
+                                                <h3 class="blog-item__title heading-h6 black fade-up">
+                                                    Стажировка в Адыгее 2026
+                                                </h3>
+                                                <div class="blog-item__category">
+                                                    <div class="blog-item__category-item">
+                                                        <span class="blog-item__category-item-text caption-small">
+                                                            Мероприятия
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="blog-item">
+                                            <picture class="blog-item__picture">
+                                                <img src="./assets/images/blog_example.png" alt="blog" class="blog-item__img">
+                                            </picture>
+                                            <article class="blog-item__content">
+                                                <h3 class="blog-item__title heading-h6 black fade-up">
+                                                    Стажировка в Адыгее 2026
+                                                </h3>
+                                                <div class="blog-item__category">
+                                                    <div class="blog-item__category-item">
+                                                        <span class="blog-item__category-item-text caption-small">
+                                                            Мероприятия
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button type="button" class="blog-nav blog-nav--prev" aria-label="Предыдущая новость">
+                                    <img src="./assets/icons/arrow.svg" alt="" class="blog-nav__icon blog-nav__icon--prev" width="12" height="20">
+                                </button>
+                                <button type="button" class="blog-nav blog-nav--next" aria-label="Следующая новость">
+                                    <img src="./assets/icons/arrow.svg" alt="" class="blog-nav__icon" width="12" height="20">
+                                </button>
+                            </div>
+                            <div class="blog-pagination"></div>
+                        </div>
+
+                        <a href="/blog" class="blog-link btn button secondary-button">Смотреть все новости</a>
                     </div>
                 </div>
             </div>
@@ -668,5 +836,8 @@
     <script src="./assets/scripts/header.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/review.js" defer></script>
+    <script src="./assets/scripts/faq.js" defer></script>
+    <script src="./assets/scripts/global-form.js" defer></script>
+    <script src="./assets/scripts/home-blog.js" defer></script>
 </body>
 </html>
