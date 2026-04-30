@@ -16,6 +16,10 @@ const header = document.querySelector('.header');
 
 if (header) {
     const revealThreshold = 400;
+
+    const syncSolidHeaderBackground = () => {
+        document.body.classList.toggle('header-scroll-solid', window.scrollY > revealThreshold);
+    };
     /** Sync with `transition: transform` on `.header` in header.css */
     const HEADER_HIDE_MS = 300;
     let lastScrollY = window.scrollY;
@@ -66,6 +70,8 @@ if (header) {
     const onScroll = () => {
         const currentScrollY = window.scrollY;
 
+        syncSolidHeaderBackground();
+
         if (currentScrollY <= revealThreshold) {
             setAbsoluteHeader();
             lastScrollY = currentScrollY;
@@ -90,4 +96,99 @@ if (header) {
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 }
+
+/*dropdown start*/
+
+(function initHeaderDropdowns() {
+    const items = document.querySelectorAll('.header-nav__item--dropdown');
+
+    items.forEach((item) => {
+        const toggle = item.querySelector('.header-nav__dropdown-toggle');
+        if (!toggle) {
+            return;
+        }
+
+        const setExpanded = (value) => {
+            toggle.setAttribute('aria-expanded', String(value));
+        };
+
+        item.addEventListener('mouseenter', () => setExpanded(true));
+        item.addEventListener('mouseleave', () => setExpanded(false));
+        item.addEventListener('focusin', () => setExpanded(true));
+        item.addEventListener('focusout', (e) => {
+            if (!item.contains(e.relatedTarget)) {
+                setExpanded(false);
+            }
+        });
+
+        toggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                setExpanded(false);
+                toggle.blur();
+            }
+        });
+    });
+})();
+
+/*dropdown end*/
+
+/*burger start*/
+
+(function initMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const openBtn = document.querySelector('.burger-btn');
+    const closeBtn = menu?.querySelector('.mobile-menu__close');
+
+    if (!menu || !openBtn || !closeBtn) {
+        return;
+    }
+
+    const mq = window.matchMedia('(max-width: 1024px)');
+
+    const open = () => {
+        if (!mq.matches) {
+            return;
+        }
+        menu.classList.add('mobile-menu--open');
+        openBtn.setAttribute('aria-expanded', 'true');
+        menu.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('mobile-menu-active');
+        closeBtn.focus();
+    };
+
+    const close = () => {
+        menu.classList.remove('mobile-menu--open');
+        openBtn.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('mobile-menu-active');
+        openBtn.focus();
+    };
+
+    openBtn.addEventListener('click', () => open());
+
+    closeBtn.addEventListener('click', () => close());
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu.classList.contains('mobile-menu--open')) {
+            close();
+        }
+    });
+
+    mq.addEventListener('change', () => {
+        if (!mq.matches && menu.classList.contains('mobile-menu--open')) {
+            close();
+        }
+    });
+
+    menu.querySelectorAll('.mobile-menu__nav-link, .mobile-menu__pill, .mobile-menu__social-link').forEach((el) => {
+        el.addEventListener('click', () => {
+            if (menu.classList.contains('mobile-menu--open')) {
+                close();
+            }
+        });
+    });
+})();
+
+/*burger end*/
